@@ -96,10 +96,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(flowLayoutManager);
         list = new ArrayList<>();
         itemList = new ArrayList<>();
+        //如果题干有四个单词 那么占位空格就有5个 具体逻辑其实很简单
         for ( int i = 0; i < res.length * 2 + 1; i++ ) {
             if ( i % 2 == 0 ) {
+                //加入占位空格
                 list.add(new ShowItem("", 1));
             } else {
+                //加入真实数据
                 list.add(new ShowItem(res[(i - 1) / 2], 0));
             }
         }
