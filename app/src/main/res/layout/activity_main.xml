@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/recycler_view"
+            android:paddingLeft="40dp"
+            android:text="正确答案"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/recycler_view"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="40dp"
+            android:text="He is not our teacher."
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/recycler_view"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:text="你的答案"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_your"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/recycler_view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="40dp"
+            android:text="He is not our teacher."
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/recycler_view"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:text="请将卡片移动到正确位置"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/flow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/shape_yellow_fram_round"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="not"
+        android:textColor="#444444"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_jump"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="跳过此题"/>
+</RelativeLayout>
