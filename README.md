@@ -3,7 +3,7 @@
 
 需求如下  
 
-<img src="./pic/aim.jpg" width="30%"/>
+<img src="./pic/aim.jpg" width="80%"/>
 
 <img src="./pic/des.jpg" width="30%"/>
 
